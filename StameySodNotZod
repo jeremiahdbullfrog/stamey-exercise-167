@@ -368,6 +368,5 @@ public class StameyMainClass
 		return localHowMany;
 	}//End of validateSales VR method	
 
-
 }//END OF class
 
