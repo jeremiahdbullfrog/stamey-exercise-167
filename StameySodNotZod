@@ -1,7 +1,7 @@
 //AUTHOR:  Jeremiah Stamey
 //COURSE:  CPT 167
 //PURPOSE:  This program uses variety of methods to retrieve the user's name, discount rate, and items. 
-//			Then the program will generate the item, order, and final reports
+//		Then the program will generate the item, order, and final reports
 //STARTDATE:  12/02/2020
 
 package edu.cpt167.stamey.exercise6;
@@ -12,22 +12,22 @@ import java.util.Scanner;
 public class StameyMainClass
 {
 	//CLASS CONSTANTS 
-	public static final double TAX_RATE = 0.075; 							//Fixed tax rate of .075
-	public static final String DISCOUNT_NAME_MEMBER = "Member"; 			//Fixed name for discounts for a "Member"
-	public static final String DISCOUNT_NAME_SENIOR = "Senior"; 			//Fixed name for discounts for a "Senior"
-	public static final String DISCOUNT_NAME_NONE = "No Discount"; 			//Fixed name for discounts for a "No Discount"
-	public static final String DISCOUNT_NAME_QUIT = "Quit";					//Fixed name for "Quit"
-	public static final double DISCOUNT_RATE_MEMBER = 0.15; 				//Fixed discount rate of 0.15
-	public static final double DISCOUNT_RATE_SENIOR = 0.25; 				//Fixed discount rate of 0.25
-	public static final double DISCOUNT_RATE_NONE = 0.0; 					//Fixed discount rate of 0.0
-	public static final String ITEM_NAME_PREMIUM = "Premium Sod";			//Fixed name for item: Premium Sod
-	public static final String ITEM_NAME_SPECIAL = "Special Sod";			//Fixed name for item: Special Sod
-	public static final String ITEM_NAME_BASIC = "Basic Sod";				//Fixed name for item: Basic Sod
+	public static final double TAX_RATE = 0.075; 				//Fixed tax rate of .075
+	public static final String DISCOUNT_NAME_MEMBER = "Member"; 		//Fixed name for discounts for a "Member"
+	public static final String DISCOUNT_NAME_SENIOR = "Senior"; 		//Fixed name for discounts for a "Senior"
+	public static final String DISCOUNT_NAME_NONE = "No Discount"; 		//Fixed name for discounts for a "No Discount"
+	public static final String DISCOUNT_NAME_QUIT = "Quit";			//Fixed name for "Quit"
+	public static final double DISCOUNT_RATE_MEMBER = 0.15; 		//Fixed discount rate of 0.15
+	public static final double DISCOUNT_RATE_SENIOR = 0.25; 		//Fixed discount rate of 0.25
+	public static final double DISCOUNT_RATE_NONE = 0.0; 			//Fixed discount rate of 0.0
+	public static final String ITEM_NAME_PREMIUM = "Premium Sod";		//Fixed name for item: Premium Sod
+	public static final String ITEM_NAME_SPECIAL = "Special Sod";		//Fixed name for item: Special Sod
+	public static final String ITEM_NAME_BASIC = "Basic Sod";		//Fixed name for item: Basic Sod
 	public static final String ITEM_NAME_RETURN = "Return to Main Menu";	//Fixed name for "Return to Main Menu"
-	public static final double ITEM_PRICE_PREMIUM = 55.95; 					//Fixed item price of 55.95
-	public static final double ITEM_PRICE_SPECIAL = 24.95; 					//Fixed item price of 24.95
-	public static final double ITEM_PRICE_BASIC = 15.95; 					//Fixed item price of 15.95
-	public static final int RESET_VALUE = 0;								//Fixed reset value of 0
+	public static final double ITEM_PRICE_PREMIUM = 55.95; 			//Fixed item price of 55.95
+	public static final double ITEM_PRICE_SPECIAL = 24.95; 			//Fixed item price of 24.95
+	public static final double ITEM_PRICE_BASIC = 15.95; 			//Fixed item price of 15.95
+	public static final int RESET_VALUE = 0;				//Fixed reset value of 0
 
 	//Start of main method
 	public static void main(String[] args) 
@@ -36,27 +36,27 @@ public class StameyMainClass
 		Scanner input = new Scanner(System.in);
 
 		//VARIABLES		
-		String userName = ""; 			//Name of current user
-		char rateSelection = ' ';		//Menu selection from the Discount Menu
-		char itemSelection = ' ';		//Menu selection from the Item Menu
-		int howMany = 0; 				//Number of bags the customer purchased
-		String discountName = "";		//Discount name based on the menu selection
-		double discountRate = 0.0; 		//Discount rate based on the menu selection
-		String itemName = ""; 			//Type of sod purchased
-		double itemPrice = 0.0; 		//Price for each bag of sod
+		String userName = ""; 		//Name of current user
+		char rateSelection = ' ';	//Menu selection from the Discount Menu
+		char itemSelection = ' ';	//Menu selection from the Item Menu
+		int howMany = 0; 		//Number of bags the customer purchased
+		String discountName = "";	//Discount name based on the menu selection
+		double discountRate = 0.0; 	//Discount rate based on the menu selection
+		String itemName = ""; 		//Type of sod purchased
+		double itemPrice = 0.0; 	//Price for each bag of sod
 		double discountAmount = 0.0; 	//Discount amount for each item
 		double discountPrice = 0.0; 	//Discount price for each item
-		double subTotal = 0.0;  		//Subtotal of the transaction
-		double tax = 0.0;  				//Tax for the transaction
-		double totalCost = 0.0; 		//Total cost of the transaction
-		int memberCount = 0;			//Count of times the member option was selected
-		int seniorCount = 0;			//Count of times the senior option was selected
-		int noDiscountCount = 0;		//Count of times no discount option was selected
-		double grandTotal = 0.0;		//Sum of all total costs
-		int premiumCount = 0;			//Count of times the premium option was selected
-		int specialCount = 0;			//Count of times the special option was selected
-		int basicCount = 0;				//Count of times the basic option was selected
-		double purchaseAmt = 0.0;		//Amount of current purchase
+		double subTotal = 0.0;  	//Subtotal of the transaction
+		double tax = 0.0;  		//Tax for the transaction
+		double totalCost = 0.0; 	//Total cost of the transaction
+		int memberCount = 0;		//Count of times the member option was selected
+		int seniorCount = 0;		//Count of times the senior option was selected
+		int noDiscountCount = 0;	//Count of times no discount option was selected
+		double grandTotal = 0.0;	//Sum of all total costs
+		int premiumCount = 0;		//Count of times the premium option was selected
+		int specialCount = 0;		//Count of times the special option was selected
+		int basicCount = 0;		//Count of times the basic option was selected
+		double purchaseAmt = 0.0;	//Amount of current purchase
 
 		//WELCOME BANNER 
 		displayWelcomeBanner();
