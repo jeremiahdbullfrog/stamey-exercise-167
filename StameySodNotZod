@@ -1,7 +1,7 @@
 //AUTHOR:  Jeremiah Stamey
 //COURSE:  CPT 167
 //PURPOSE:  This program uses variety of methods to retrieve the user's name, discount rate, and items. 
-//		Then the program will generate the item, order, and final reports
+//	    Then the program will generate the item, order, and final reports
 //STARTDATE:  12/02/2020
 
 package edu.cpt167.stamey.exercise6;
